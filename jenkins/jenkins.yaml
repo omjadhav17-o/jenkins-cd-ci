@@ -1,0 +1,12 @@
+jenkins:
+  systemMessage: "Jenkins CI/CD Demo"
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: admin
+          password: 8b2550fb60d14a0087f66833448da3b9
+  authorizationStrategy:
+    globalMatrix:
+      permissions:
+        - "Overall/Administer:admin"
